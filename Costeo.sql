@@ -1,0 +1,6 @@
+CREATE FUNCTION `Costeo` RETURNS CHAR(20)
+DETERMINISTIC 
+BEGIN 
+ SELECT IDProd, preUnProd, IF(preUnProd>100, "ALTO", "BAJO")
+FROM Productos
+END; 
