@@ -1,0 +1,1 @@
+DROP PROCEDURE Productos_de_menor500
